@@ -1,2 +1,2 @@
 # renew_letsencrypt
-script to renew lets encrypt certificates on a digital ocean ubuntu 16.04 server 
+A simple bash script I use to automate renewing my Let’s Encrypt SSL certificates. 
