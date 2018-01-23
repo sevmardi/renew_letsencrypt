@@ -15,13 +15,11 @@ date
 
 EXIT_CODE="$?"
 
-domains = $1
-
-if [-z '$domains' ] then
-	echo '[ERROR] Specified the domains name for the certificates renewal.'
-	exit 1;
+domains=$1
+if [ -z "$domains" ] ; then
+        echo "[ERROR] Specified the domains name for the certificates renewal."
+        exit 1;
 fi
-
 
 # First Take care of Apache2
 echo 'Stopping apache2..'
