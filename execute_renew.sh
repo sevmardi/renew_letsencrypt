@@ -5,6 +5,10 @@
 CONFIG_DIR="/etc/letsencrypt/renewal"
 EXP_LIMIT=30;
 ALERTTIME=864000
+PATH_FILE_LOG_SCRIPT=/var/log/le-renew.log
+
+# echo "Start Script - $NOW" >> $PATH_FILE_LOG_SCRIPT
+# echo "End Script - $NOW" >> $PATH_FILE_LOG_SCRIPT
 
 echo "
 ################
@@ -12,6 +16,7 @@ echo "
 ################"
 # We display date
 date
+# NOW=$(date +"%Y-%m-%d %T")
 
 EXIT_CODE="$?"
 
